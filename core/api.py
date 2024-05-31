@@ -44,7 +44,7 @@ class Text2ImageAPI:
         data = response.json()
         return data["uuid"]
 
-    def check_generation(self, request_id, attempts=100, delay=24):
+    def check_generation(self, request_id, attempts=100, delay=60):
         while attempts > 0:
             response = requests.get(
                 self.URL + "key/api/v1/text2image/status/" + request_id,

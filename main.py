@@ -1,18 +1,10 @@
-import json
-
-from core.generator import image_generation
-from core.working_with_files import write_image_data
+from core.generator import generating_images_all_tasks, generate_task_images
 
 
-try:
-    with open("prompts.json", "r") as file:
-        data = json.load(file)
-except FileNotFoundError as e:
-    print(e)
+# оставьте одну функцию вторую закомментируйте
 
-for el in data:
-    image_data = image_generation(el["prompt"], el["decor"])
-    write_image_data(
-        image_data,
-        el["task"],
-    )
+generating_images_all_tasks()  # если необходимо совершить генерацию по всем prompt.
+
+generate_task_images(
+    task_name="Задача №6"
+)  # если необходимо совершить генерацию одного prompt.
