@@ -3,12 +3,12 @@ import uuid
 import os
 
 
-def write_image_data(image_data, file_name, dirr="res"):
+def write_image_data(image_data, file_name, dir="images"):
 
-    if not os.path.exists(dirr):
-        os.makedirs(dirr)
+    if not os.path.exists(dir):
+        os.makedirs(dir)
 
-    filename = f"{dirr}/{file_name}__{uuid.uuid4()}.jpg"
+    filename = f"{dir}/{file_name}__{uuid.uuid4()}.jpg"
 
     try:
         with open(filename, "wb") as file:

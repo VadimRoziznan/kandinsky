@@ -139,7 +139,7 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-res/
+images/
 
 # mkdocs documentation
 /site
