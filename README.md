@@ -72,4 +72,4 @@ pip install -r requirements.txt
 
 ![Image description](pictures/api_keys.png)
 
-В корне вашего проекта создаём файл .env копируем в него содержимое файла .env_example?, добавляем ключи.
+В корне вашего проекта создаём файл .env копируем в него содержимое файла .env_example, добавляем ключи.
