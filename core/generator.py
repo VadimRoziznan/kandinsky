@@ -23,7 +23,7 @@ def image_generation(prompt, decor):
     return image_data
 
 
-def generating_images_all_tasks():
+def generate_tasks_images():
     data = open_file()
 
     for el in data:
@@ -35,7 +35,7 @@ def generating_images_all_tasks():
     return
 
 
-def generate_task_images(task_name):
+def generate_task_image(task_name):
     data = open_file()
 
     for el in data:
