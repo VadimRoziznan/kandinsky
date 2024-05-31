@@ -102,13 +102,13 @@ pip install -r requirements.txt
 Если необходимо совершить генерацию изображений к всем задачам.
 
 ```bash
-generating_images_all_tasks() 
+generate_tasks_images() 
 ```
 
 Если необходимо совершить генерацию одного изображения к конкретной задаче.
 
 ```bash
-generate_task_images(
+generate_task_image(
     task_name="Задача №6"
 ) 
 ```
