@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def image_generation(prompt, exercise):
-    full = prompt + " " + exercise
+def image_generation(prompt, decor):
+    full = prompt + " " + decor
     api = Text2ImageAPI(
         "https://api-key.fusionbrain.ai/", os.getenv("api_key"), os.getenv("secret_key")
     )
