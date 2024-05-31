@@ -1,4 +1,5 @@
 import uuid
+import os
 
 
 def write_image_data(image_data, prompt, dirr="res"):
@@ -7,6 +8,9 @@ def write_image_data(image_data, prompt, dirr="res"):
     except Exception as e:
         print(e)
         truncated_prompt = "image"
+
+    if not os.path.exists(dirr):
+        os.makedirs(dirr)
 
     filename = f"{dirr}/{truncated_prompt.split('.')[0]}_{uuid.uuid4()}.jpg"
 
